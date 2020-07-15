@@ -1,25 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Hello from "./hello.js"
 
-function App() {
+
+
+function App({name, age} /*destructuring the object extracting propoerties from the object */) 
+{
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Hello world from App.js updated by {name} age is {age}
+      <br/>
+      <Hello fname="Ahsan"/>
+
     </div>
+
   );
 }
 
